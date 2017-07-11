@@ -12,6 +12,7 @@
             <th> Street </th>
             <th> City </th>
             <th> State </th>
+            <th> Actions </th>
         </tr>
     </thead>
     <tbody>
@@ -21,6 +22,7 @@
             <td> <%= dojo.street %> </td>
             <td> <%= dojo.city %> </td>
             <td> <%= dojo.state %> </td>
+            <td> <%= link_to "Show", dojo %> | <%= link_to "Edit", edit_dojo_path(dojo) %> | <%= link_to "Delete", dojo, data: { method: :delete, confirm: "Are you sure?" }%> </td>
         </tr>
         <% end %>
     </tbody>
