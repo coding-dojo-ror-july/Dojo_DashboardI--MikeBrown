@@ -10,16 +10,16 @@
 <br>
 <form action="/dojos" method="post">
     <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
-   Branch: <input type="text" name="branch">
+   Branch: <input type="text" name="dojo[branch]">
     <br>
     <br>
-   Street: <input type="text" name="street">
+   Street: <input type="text" name="dojo[street]">
     <br>
     <br>
-   City: <input type="text" name="city">
+   City: <input type="text" name="dojo[city]">
     <br>
     <br>
-   State: <input type="text" name="state">
+   State: <input type="text" name="dojo[state]">
     <br>
     <br>
     <input type="submit" value="Create Dojo">
