@@ -1,0 +1,22 @@
+<h1> Listing <%= pluralize(@dojos.count, "Dojo") %> </h1>
+
+<table>
+    <thead>
+        <tr>
+            <th> Coding Dojo Branch </th>
+            <th> Street </th>
+            <th> City </th>
+            <th> State </th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @dojos.each do |dojo| %>
+        <tr>
+            <td> <%= dojo.branch %> </td>
+            <td> <%= dojo.street %> </td>
+            <td> <%= dojo.city %> </td>
+            <td> <%= dojo.state %> </td>
+        </tr>
+        <% end %>
+    </tbody>
+</table>
